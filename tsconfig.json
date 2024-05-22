@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
     "useDefineForClassFields": true,
-    "lib": ["es6", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     //    "jsxImportSource": "@emotion/react",
     "types": ["cypress", "node", "@testing-library/cypress", "jest", "@testing-library/jest-dom"],
@@ -14,14 +14,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
 
     /* Linting */
-    "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
+
+    "allowJs": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "incremental": true,
 
     /* Paths */
     "baseUrl": "./",
@@ -37,9 +42,24 @@
       "@/typings/*": ["src/typings/*"],
       "@/api/*": ["src/api/*"],
       "@/mocks/*": ["src/mocks/*"]
-    }
+    },
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
   },
-  "include": ["./src/**/*.ts", "./src/**/*.js"],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.js",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "./dist/types/**/*.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "exclude": ["*/**/*.test.tsx"]
+  "exclude": ["*/**/*.test.tsx", "node_modules"]
 }

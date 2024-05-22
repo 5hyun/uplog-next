@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Link, NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import { FiUser } from 'react-icons/fi';
