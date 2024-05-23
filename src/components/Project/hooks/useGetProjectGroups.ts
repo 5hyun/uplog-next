@@ -1,3 +1,4 @@
+'use client';
 import { useQuery } from 'react-query';
 import { getParentGroups } from '@/api/Project/Version.ts';
 import { ParentGroup, ParentGroupWithStates } from '@/typings/project.ts';

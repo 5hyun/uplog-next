@@ -1,3 +1,4 @@
+'use client';
 import { atom } from 'recoil';
 import { changeType } from '@/typings/product.ts';
 

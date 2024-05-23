@@ -1,3 +1,5 @@
+'use client';
+
 import { NavLink, useNavigate, useParams } from 'react-router-dom';
 import { BsChevronCompactUp } from 'react-icons/bs';
 import MenuSlider from '@/components/Project/Menu/MenuSlider.tsx';

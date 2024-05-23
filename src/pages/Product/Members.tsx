@@ -1,3 +1,5 @@
+'use client';
+
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import { BsCheckCircle, BsPeopleFill } from 'react-icons/bs';
 import { Textarea, useDisclosure } from '@chakra-ui/react';
@@ -22,7 +24,6 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import { productMemberList } from '@/recoil/Product/atom.ts';
 import { frontEndUrl, message } from '@/recoil/Common/atom.ts';
 import { FaUserCircle } from 'react-icons/fa';
-import { sendLog } from '@/api/Log';
 import { useGetProductMembers } from '@/pages/Product/hooks/useGetProductMembers.ts';
 
 export default function Members() {
@@ -45,22 +46,12 @@ export default function Members() {
   const [isOut, setIsOut] = useState(false);
   const [messageInfo, setMessageInfo] = useRecoilState(message);
   const [wrongEmail, setWrongEmail] = useState(0);
-  const { mutate: sendLogMutate } = useMutation(sendLog);
 
   const { mutate } = useMutation(productEdit, {
     onSuccess: (data) => {
       if (typeof data !== 'string' && data.updateResultDTO) {
         const { failCnt, failMemberList, duplicatedCnt, duplicatedMemberList } =
           data.updateResultDTO;
-
-        !!failCnt &&
-          Array.from({ length: failCnt }).map(() =>
-            sendLogMutate({ page: 'member', status: false, message: 'fail' })
-          );
-        !!duplicatedCnt &&
-          Array.from({ length: duplicatedCnt }).map(() =>
-            sendLogMutate({ page: 'member', status: false, message: 'duplicated' })
-          );
 
         if (failCnt > 0 && duplicatedCnt > 0) {
           setMessageInfo({
@@ -161,7 +152,6 @@ export default function Members() {
   const onClickInvite = useCallback(() => {
     if (emails === '') {
       setMessageInfo({ type: 'warning', content: '이메일을 입력해주세요.' });
-      sendLogMutate({ page: 'member', status: false, message: 'all' });
 
       return;
     }
@@ -260,19 +250,19 @@ export default function Members() {
     setNowSelectedMemberId(id);
   }, []);
 
-  useEffect(() => {
-    if (isSuccess) {
-      setMembers(data!);
-    }
-  }, [isSuccess]);
-
-  useEffect(() => {
-    if (wrongEmail > 0) {
-      Array.from({ length: wrongEmail }).map(() =>
-        sendLogMutate({ page: 'member', status: false, message: 'email' })
-      );
-    }
-  }, [wrongEmail]);
+  // useEffect(() => {
+  //   if (isSuccess) {
+  //     setMembers(data!);
+  //   }
+  // }, [isSuccess]);
+  //
+  // useEffect(() => {
+  //   if (wrongEmail > 0) {
+  //     Array.from({ length: wrongEmail }).map(() =>
+  //       sendLogMutate({ page: 'member', status: false, message: 'email' })
+  //     );
+  //   }
+  // }, [wrongEmail]);
 
   return (
     <section

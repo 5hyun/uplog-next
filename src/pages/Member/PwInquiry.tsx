@@ -1,3 +1,4 @@
+'use client';
 import React, { FormEvent, useCallback, useState } from 'react';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import useInput from '@/hooks/useInput.ts';

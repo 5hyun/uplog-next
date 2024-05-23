@@ -1,3 +1,4 @@
+'use client';
 import { DatePicker, DatePickerProps, Select } from 'antd';
 import { SaveProjectInfo, SubGroup } from '@/typings/project.ts';
 import { SelectMenu } from '@/typings/menu.ts';

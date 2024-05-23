@@ -1,3 +1,4 @@
+'use client';
 import React, { useCallback, useEffect, useState } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { Collapse, useDisclosure } from '@chakra-ui/react';

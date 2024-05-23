@@ -1,3 +1,4 @@
+'use client';
 import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react';
 import { ProductInfo } from '@/typings/product.ts';
 import { Table, TableContainer, Th, Thead, Tr, useDisclosure } from '@chakra-ui/react';

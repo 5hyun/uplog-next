@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '../index.css';
-import GlobalStyles from '../styles/GlobalStyles.tsx';
+import { RecoilRoot } from 'recoil';
+// import GlobalStyles from '../styles/GlobalStyles.tsx';
 
 export const metadata: Metadata = {
   title: 'React App',
@@ -8,17 +9,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  if (localStorage.theme === 'dark') {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
+  // if (localStorage.theme === 'dark') {
+  //   document.documentElement.classList.add('dark');
+  // } else {
+  //   document.documentElement.classList.remove('dark');
+  // }
 
   return (
     <html lang="en">
       <body>
-        <GlobalStyles />
-        <div id="root">{children}</div>
+        {/*<GlobalStyles />*/}
+        <RecoilRoot>
+          <div id="root">{children}</div>
+        </RecoilRoot>
       </body>
     </html>
   );

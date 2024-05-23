@@ -1,3 +1,4 @@
+'use client';
 import { ChildGroup } from '@/typings/project.ts';
 import { getChildGroups } from '@/api/Project/Version.ts';
 import { useQuery } from 'react-query';

@@ -1,3 +1,4 @@
+'use client';
 import { GroupMember } from '@/typings/project.ts';
 import { atom } from 'recoil';
 import { MenuTaskData, StatusTaskData, TaskData, UpdateTaskBody } from '@/typings/task.ts';

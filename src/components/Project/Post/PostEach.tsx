@@ -1,3 +1,4 @@
+'use client';
 import { Post, PostLikeList } from '@/typings/post.ts';
 import { formatCreateDate } from '@/utils/fotmatCreateDate.ts';
 import PostModal from '@/components/Project/Post/PostModal.tsx';

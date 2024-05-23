@@ -1,3 +1,4 @@
+'use client';
 import { RefObject, useEffect } from 'react';
 import { productOpen } from '@/recoil/Product/atom.ts';
 import { useRecoilState } from 'recoil';

@@ -1,3 +1,4 @@
+'use client';
 import React, { Dispatch, SetStateAction, useCallback, useEffect, useState } from 'react';
 import {
   Modal,

@@ -1,8 +1,9 @@
 'use client';
+
 import React, { FormEvent, useCallback, useEffect } from 'react';
-import { MdOutlineMailOutline } from 'react-icons/md';
+// import { MdOutlineMailOutline } from 'react-icons/md';
 import useInput from '@/hooks/useInput.ts';
-import { AiOutlineLock } from 'react-icons/ai';
+// import AiOutlineLock from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import { FailResponse, GetUserInfo, LoginInfo, UserInfo } from '@/typings/member.ts';
 import { useMutation } from 'react-query';
@@ -10,7 +11,7 @@ import { useRecoilState } from 'recoil';
 import { user } from '@/recoil/User/atom.ts';
 import { loginAPI } from '@/api/Members/Login-Signup.ts';
 import { message } from '@/recoil/Common/atom.ts';
-import { encrypt } from '../../utils/crypto';
+import { encrypt } from '@/utils/crypto';
 
 export default function Login() {
   const [messageInfo, setMessageInfo] = useRecoilState(message);
@@ -104,9 +105,9 @@ export default function Login() {
               >
                 <label className={'w-h-full flex-row-center'}>
                   <span className={'w-1/6 h-full flex-row-center text-2xl '}>
-                    <MdOutlineMailOutline
-                      className={`${email ? 'fill-orange' : 'fill-gray-light'}`}
-                    />
+                    {/*<MdOutlineMailOutline*/}
+                    {/*  className={`${email ? 'fill-orange' : 'fill-gray-light'}`}*/}
+                    {/*/>*/}
                   </span>
                   <input
                     type="text"
@@ -124,7 +125,7 @@ export default function Login() {
               <span className={'w-full h-[4.5rem] flex-row-center'}>
                 <label className={'w-h-full flex-row-center'}>
                   <span className={'w-1/6 h-full flex-row-center text-2xl'}>
-                    <AiOutlineLock className={`${password ? 'fill-orange' : 'fill-gray-light'}`} />
+                    {/*<AiOutlineLock className={`${password ? 'fill-orange' : 'fill-gray-light'}`} />*/}
                   </span>
                   <span className={'w-5/6 h-full flex'}>
                     <input

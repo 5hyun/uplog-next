@@ -1,3 +1,4 @@
+'use client';
 import React, { useCallback, useState } from 'react';
 import { ProductMember } from '@/typings/product.ts';
 import { Scrollbars } from 'react-custom-scrollbars';

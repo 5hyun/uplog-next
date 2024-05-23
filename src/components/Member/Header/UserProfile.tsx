@@ -1,3 +1,4 @@
+'use client';
 import { FaUserCircle } from 'react-icons/fa';
 import { AiFillStar, AiOutlinePoweroff } from 'react-icons/ai';
 import { BiPencil } from 'react-icons/bi';

@@ -1,3 +1,4 @@
+'use client';
 import { TaskData, TaskStatus } from '@/typings/task.ts';
 import { FaUserCircle } from 'react-icons/fa';
 import { useState } from 'react';

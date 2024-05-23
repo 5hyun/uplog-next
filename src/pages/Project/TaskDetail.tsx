@@ -1,3 +1,5 @@
+'use client';
+
 import { IoIosArrowBack } from 'react-icons/io';
 import { useParams } from 'react-router-dom';
 import { Select, Textarea, useDisclosure } from '@chakra-ui/react';

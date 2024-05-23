@@ -1,3 +1,4 @@
+'use client';
 import React, { useCallback, useState } from 'react';
 import { Tbody, Td, Tr } from '@chakra-ui/react';
 import { GoKebabHorizontal } from 'react-icons/go';

@@ -1,3 +1,4 @@
+'use client';
 import { eachProduct } from '@/api/Product/Product.ts';
 import { useQuery } from 'react-query';
 import { Dispatch, SetStateAction } from 'react';

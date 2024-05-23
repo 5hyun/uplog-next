@@ -1,3 +1,4 @@
+'use client';
 import { formatCreateDate } from '@/utils/fotmatCreateDate.ts';
 import { FaUserCircle } from 'react-icons/fa';
 import { BsHeart, BsHeartFill } from 'react-icons/bs';

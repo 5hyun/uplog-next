@@ -1,3 +1,4 @@
+'use client';
 import { atom } from 'recoil';
 import { ProductInfo, ProductMember } from '@/typings/product.ts';
 import { SelectMenu } from '@/typings/menu.ts';

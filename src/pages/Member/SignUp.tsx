@@ -1,3 +1,4 @@
+'use client';
 import React, { FormEvent, useCallback, useEffect, useState } from 'react';
 import useInput from '@/hooks/useInput';
 import { FiUser } from 'react-icons/fi';

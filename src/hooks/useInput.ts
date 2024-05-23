@@ -1,3 +1,4 @@
+'use client';
 import { Dispatch, SetStateAction, useCallback, useState, ChangeEvent } from 'react';
 
 type ReturnTypes<T = ChangeEvent<HTMLInputElement>> = [

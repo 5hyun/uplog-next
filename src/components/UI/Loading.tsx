@@ -1,3 +1,4 @@
+'use client';
 import { Spinner } from '@chakra-ui/react';
 import { useIsFetching, useIsMutating } from 'react-query';
 

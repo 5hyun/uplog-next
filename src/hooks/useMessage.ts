@@ -1,3 +1,4 @@
+'use client';
 import message from 'antd/lib/message';
 
 type MessageType = 'success' | 'error' | 'warning';

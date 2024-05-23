@@ -1,3 +1,4 @@
+'use client';
 import { MenuInfo } from '@/typings/menu.ts';
 import { useRecoilState } from 'recoil';
 import { menuListData } from '@/recoil/Project/Menu.ts';

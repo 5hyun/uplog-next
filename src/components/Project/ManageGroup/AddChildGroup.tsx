@@ -1,3 +1,4 @@
+'use client';
 import React, { ChangeEvent, useCallback, useState } from 'react';
 import { Editable, EditableInput, EditablePreview } from '@chakra-ui/react';
 import { createProjectTeam } from '@/api/Project/Version.ts';

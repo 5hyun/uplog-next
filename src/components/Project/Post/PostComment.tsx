@@ -1,3 +1,4 @@
+'use client';
 import { FaUserCircle } from 'react-icons/fa';
 import { formatCreateDate } from '@/utils/fotmatCreateDate.ts';
 import { useCallback, useEffect, useState } from 'react';

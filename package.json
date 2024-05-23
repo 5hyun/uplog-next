@@ -17,6 +17,7 @@
     "@babel/helper-plugin-utils": "^7.22.5",
     "@babel/plugin-syntax-jsx": "^7.22.5",
     "@babel/preset-env": "^7.24.5",
+    "@bundled-es-modules/statuses": "^1.0.1",
     "@chakra-ui/icons": "^2.1.0",
     "@chakra-ui/react": "^2.7.1",
     "@chakra-ui/styled-system": "^2.9.1",
@@ -74,6 +75,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-react-jsx": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@emotion/babel-plugin-jsx-pragmatic": "^0.2.1",

@@ -9,6 +9,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     // 'plugin:storybook/recommended',
+    '@babel/plugin-transform-private-property-in-object',
+    'next/core-web-vitals',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

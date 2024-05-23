@@ -1,3 +1,4 @@
+'use client';
 import React, { useCallback, useEffect, useState } from 'react';
 import { ChildGroup, ChildGroupMember, ParentGroupMember } from '@/typings/project.ts';
 import { ProductMember } from '@/typings/product.ts';

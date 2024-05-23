@@ -1,3 +1,4 @@
+'use client';
 import { atom } from 'recoil';
 import { CommentInfo, Posts } from '@/typings/post.ts';
 

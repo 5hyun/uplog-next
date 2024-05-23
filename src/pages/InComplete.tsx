@@ -1,5 +1,6 @@
-import { useNavigate } from 'react-router-dom';
+'use client';
 
+import { useNavigate } from 'react-router-dom';
 export default function InComplete() {
   return (
     <section className={'flex-col-center w-h-full pb-[10%]'}>

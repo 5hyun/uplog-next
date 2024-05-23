@@ -1,3 +1,4 @@
+'use client';
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { Link, useParams } from 'react-router-dom';

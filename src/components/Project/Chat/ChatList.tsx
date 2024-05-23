@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Chats } from '../../../mocks/api/data/project/chat.ts';
 import { SaveProjectInfo } from '@/typings/project.ts';

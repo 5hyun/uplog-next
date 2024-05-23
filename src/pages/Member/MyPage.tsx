@@ -1,3 +1,4 @@
+'use client';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import ImageCrop from '@/components/Member/MyPage/ImageCrop.tsx';
 import { UploadFile, UploadProps } from 'antd/lib';

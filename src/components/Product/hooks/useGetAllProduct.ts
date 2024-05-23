@@ -1,3 +1,4 @@
+'use client';
 import { getAllProducts } from '@/api/Product/Product.ts';
 import { GetProductList, ProductInfo } from '@/typings/product.ts';
 import { useQuery } from 'react-query';

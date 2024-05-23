@@ -1,3 +1,4 @@
+'use client';
 import { BsExclamationCircle, BsFillMegaphoneFill } from 'react-icons/bs';
 import { Post, PostLikeList, Posts } from '@/typings/post.ts';
 import PostEach from '@/components/Project/Post/PostEach.tsx';

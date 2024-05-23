@@ -1,3 +1,4 @@
+'use client';
 import { atom } from 'recoil';
 import { GroupMember, Release } from '@/typings/project.ts';
 

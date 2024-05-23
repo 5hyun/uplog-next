@@ -1,3 +1,4 @@
+'use client';
 import { atom } from 'recoil';
 import { UserInfo } from '@/typings/member.ts';
 import { decrypt } from '@/utils/crypto.ts';

@@ -1,3 +1,4 @@
+'use client';
 import { AiOutlinePlus } from 'react-icons/ai';
 import React, { useCallback, useState } from 'react';
 import { productOpen } from '@/recoil/Product/atom.ts';

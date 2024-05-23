@@ -1,4 +1,6 @@
-import './../App.css';
+'use client';
+
+import './App.css';
 import { useRecoilState } from 'recoil';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -11,7 +13,7 @@ import { Scrollbars } from 'rc-scrollbars';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { productOpen } from '@/recoil/Product/atom.ts';
-import { worker } from '../mocks/browser.ts';
+import { worker } from './mocks/browser';
 
 const Header = loadable(() => import('@/components/UI/Header'));
 const Loading = loadable(() => import('@/components/UI/Loading'));
@@ -20,7 +22,7 @@ const Login = loadable(() => import('@/pages/Member/Login'));
 const SignUp = loadable(() => import('@/pages/Member/SignUp'));
 const PwInquiry = loadable(() => import('@/pages/Member/PwInquiry'));
 const MyPage = loadable(() => import('@/pages/Member/MyPage'));
-const Workspace = loadable(() => import('@/layouts/Workspace.tsx'));
+const Workspace = loadable(() => import('@/pages/Workspace.tsx'));
 const Project = loadable(() => import('@/pages/Project/Project.tsx'));
 const ReleaseNote = loadable(() => import('@/pages/Product/ReleaseNote.tsx'));
 const Calendar = loadable(() => import('@/pages/Product/Calendar.tsx'));
@@ -49,13 +51,13 @@ function App() {
     setIsProductClick(false);
   }, []);
 
-  if (import.meta.env.VITE_IS_MSW === 'true') {
-    worker.start({
-      onUnhandledRequest: () => {
-        return false;
-      },
-    });
-  }
+  // if (import.meta.env.VITE_IS_MSW === 'true') {
+  //   worker.start({
+  //     onUnhandledRequest: () => {
+  //       return false;
+  //     },
+  //   });
+  // }
 
   return (
     <QueryClientProvider client={queryClient}>

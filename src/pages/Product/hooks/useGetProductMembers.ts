@@ -1,3 +1,4 @@
+'use client';
 import { getProductMemberList } from '@/api/Product/Product.ts';
 import { ProductMember } from '@/typings/product.ts';
 import { useQuery } from 'react-query';

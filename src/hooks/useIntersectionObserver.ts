@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 import { TaskPaging } from '@/typings/task.ts';
 import { InfiniteQueryObserverResult } from 'react-query';

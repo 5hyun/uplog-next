@@ -1,3 +1,4 @@
+'use client';
 import { SelectMenu } from '@/typings/menu.ts';
 import { Select } from 'antd';
 import { taskAll } from '@/recoil/Project/Task.ts';

@@ -1,7 +1,8 @@
 import CryptoJS from 'crypto-js';
 
 /* Salt 비밀 키 */
-const salt = import.meta.env.VITE_SALT;
+// const salt = import.meta.env.VITE_SALT;
+const salt = '1234';
 
 /* 암호화 */
 export const encrypt = (text: string) => {

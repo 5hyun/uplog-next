@@ -1,3 +1,4 @@
+'use client';
 import { MenuInfo } from '@/typings/menu.ts';
 import { atom } from 'recoil';
 
